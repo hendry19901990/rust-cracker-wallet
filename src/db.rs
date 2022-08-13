@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::collections::HashSet;
 
-const FILENAME: &str = "/Users/hrodri20/Documents/eth/rust-crypto-wallet/privates/";
+const FILENAME: &str = "/privates/";
 
 pub fn store(private_key: String, address: String) -> std::io::Result<()> {
 	let mut file = File::create(format!("{}{}.tx", FILENAME, &address.to_string()))?;
